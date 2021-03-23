@@ -18,6 +18,10 @@ async def bilibili_check():
 async def rss_check():
     await fetch_and_send('rss')
 
+@scheduler.scheduled_job('interval', seconds=30)
+async def bitcs_check():
+    await fetch_and_send('bitcs')
+
 
 # @scheduler.scheduled_job('interval', seconds=30)
 # async def wechat_check():

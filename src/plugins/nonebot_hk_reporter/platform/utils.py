@@ -6,6 +6,7 @@ from .weibo import Weibo
 from .bilibili import Bilibili
 from .rss import Rss
 from .wechat import Wechat
+from .bitcs import BitCS
 from .platform import PlatformProto
 from ..config import Config
 from ..post import Post
@@ -18,6 +19,7 @@ platform_manager: dict[str, PlatformProto] = {
         'bilibili': Bilibili(),
         'weibo': Weibo(),
         'rss': Rss(),
+        'bitcs': BitCS()
         # 'wechat': Wechat(),
     }
 

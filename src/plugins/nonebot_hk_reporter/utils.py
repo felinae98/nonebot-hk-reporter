@@ -21,7 +21,7 @@ class Singleton(type):
         return cls._instances[cls]
 
 # supported_target_type = ('weibo', 'bilibili', 'rss', 'wechat')
-supported_target_type = ('weibo', 'bilibili', 'rss')
+supported_target_type = ('weibo', 'bilibili', 'rss', 'bitcs')
 
 if not plugin_config.hk_reporter_use_local and not check_chromium():
     os.environ['PYPPETEER_DOWNLOAD_HOST'] = 'http://npm.taobao.org/mirrors'
